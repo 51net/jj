@@ -217,12 +217,29 @@ bind(player, 'loadedmetadata', adjustVideoSize);
 })(window, document);
 </script>
 
-<div class="separator" style="clear: both; text-align: center;">
+<style> .social-icons {
+  display: flex;
+  justify-content: center;
+  gap: 10px; /* space between icons */
+  margin: 20px 0;
+}
+.social-icons img {
+  height: 50px;
+  width: 50px;
+  border-radius: 8px;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+.social-icons img:hover {
+  transform: scale(1.1);
+  box-shadow: 0 0 8px rgba(0,0,0,0.3);
+}
+</style>
+
+<div class="social-icons" style="clear: both; text-align: center;">
 <br /><br />
   <a
     href="https://www.youtube.com/c/NetSec"
-    style="margin-left: 1em; margin-right: 1em;"
-    target="_blank"
+    style="margin-left: 1em; margin-right: 1em;"     target="_blank"
   >
     <img alt="51sec YouTube" 
       border="0"
@@ -235,8 +252,7 @@ bind(player, 'loadedmetadata', adjustVideoSize);
   </a>
   <a
     href="https://sites.51sec.org"
-    style="margin-left: 1em; margin-right: 1em;"
-    target="_blank"
+    style="margin-left: 1em; margin-right: 1em;"     target="_blank"
   >
     <img alt="51sec Sites" 
       border="0"
@@ -250,7 +266,6 @@ bind(player, 'loadedmetadata', adjustVideoSize);
   <a href="https://nav.51sec.org" style="margin-left: 1em; margin-right: 1em;">
     <img alt="51sec Navigation" 
       border="0"
-      data-original-height="350"
       data-original-width="500"
       height="50"
       src="https://photos.51sec.org/file/test1-51sec/2021/10/Black%2C%20White%20and%20Yellow%20Lightning%20-%20Round%20corner-350.png"
@@ -258,14 +273,10 @@ bind(player, 'loadedmetadata', adjustVideoSize);
     />
   </a>
   <a
-    href="https://od.51sec.org"
-    style="margin-left: 1em; margin-right: 1em;"
-    target="_blank"
-  >
+    href="https://od.51sec.org"     style="margin-left: 1em; margin-right: 1em;"     target="_blank"  >
     <img alt="51sec OneDrive" 
       border="0"
       data-original-height="500"
-
       height="50"
       src="https://photos.51sec.org/file/test1-51sec/2021/10/OneDrive%20OD%2051sec-roundcorner%20-%20Copy.png"
       width="50"
@@ -273,8 +284,7 @@ bind(player, 'loadedmetadata', adjustVideoSize);
   </a>
   <a
     href="http://xjj.51sec.org"
-    style="margin-left: 1em; margin-right: 1em;"
-    target="_blank"
+    style="margin-left: 1em; margin-right: 1em;"     target="_blank"
   >
     <img alt="XJJ" 
       border="0"
